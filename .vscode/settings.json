@@ -1,0 +1,6 @@
+{
+    "dart.flutterGenerateLocalizationsOnSave": "never",
+    "dart.hotReloadOnSave": "manual",
+    "dart.experimentalRefactors": false,
+    "dart.normalizeFileCasing": false
+}
