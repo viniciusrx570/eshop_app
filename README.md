@@ -1,12 +1,12 @@
 # E-Shop App
 
 O E-Shop App é uma aplicação de compras desenvolvida em Flutter.
-
-<img src="home_page.png" width="150" >
-<img src="car_screen.png" width="150">
-<img src="pagamento.png" width="150">
-<img src="fim.png" width="150">
-
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="home_page.png" width="150" >
+  <img src="car_screen.png" width="150">
+  <img src="pagamento.png" width="150">
+  <img src="fim.png" width="150">
+</div>
 
 ## Funcionalidades Principais
 
