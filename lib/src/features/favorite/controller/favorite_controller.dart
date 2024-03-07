@@ -1,4 +1,4 @@
-import 'package:eshop_app/src/core/models/favorite_model.dart';
+import 'package:eshop_app/src/features/favorite/data/model/favorite_model.dart';
 import 'package:eshop_app/src/core/models/products_model.dart';
 import 'package:eshop_app/src/core/services/storage_service/secure_storage.dart';
 import 'package:flutter/material.dart';

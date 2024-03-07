@@ -8,7 +8,6 @@ import 'package:eshop_app/src/core/ultils/api_ultil.dart';
 class IProductRepository extends ProductRepository {
 
 
-  // ===== inversão da injeção de dependencia ==== \\
   final ClientService _client;
   IProductRepository(ClientService client) :_client = client;
 

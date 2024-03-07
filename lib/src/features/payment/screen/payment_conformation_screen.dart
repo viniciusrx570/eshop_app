@@ -1,4 +1,4 @@
-import 'package:eshop_app/src/core/controller/cart_controller.dart';
+import 'package:eshop_app/src/features/cart/controller/cart_controller.dart';
 import 'package:eshop_app/src/features/home/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

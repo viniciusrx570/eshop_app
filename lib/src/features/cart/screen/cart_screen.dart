@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:eshop_app/src/core/controller/cart_controller.dart';
+import 'package:eshop_app/src/features/cart/controller/cart_controller.dart';
 import 'package:eshop_app/src/features/payment/screen/payment_screen.dart';
 
 class CartScreen extends StatefulWidget {

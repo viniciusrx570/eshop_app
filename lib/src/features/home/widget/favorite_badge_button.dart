@@ -1,4 +1,4 @@
-import 'package:eshop_app/src/core/controller/favorite_controller.dart';
+import 'package:eshop_app/src/features/favorite/controller/favorite_controller.dart';
 import 'package:eshop_app/src/features/favorite/screen/favorite_screen.dart';
 import 'package:flutter/material.dart';
 

@@ -1,12 +1,12 @@
-import 'package:eshop_app/src/core/models/card_model.dart';
+import 'package:eshop_app/src/features/cart/data/model/card_model.dart';
 import 'package:eshop_app/src/core/models/products_model.dart';
 import 'package:eshop_app/src/core/services/storage_service/secure_storage.dart';
 import 'package:flutter/material.dart';
 
-class CartContrl with ChangeNotifier{
-    final String cartKey = 'cartKey';
+class CartContrl with ChangeNotifier {
+  final String cartKey = 'cartKey';
 
-    List<Cart> cartItems = [];
+  List<Cart> cartItems = [];
   bool isBuy(Product product) {
     return cartItems.any((cartItems) => cartItems.product.id == product.id);
   }
@@ -49,6 +49,7 @@ class CartContrl with ChangeNotifier{
     }
     return total;
   }
+
   // Método para salvar o carrinho de compras
   Future<void> saveCart() async {
     String cartItemsJson = cartItemsToJson(cartItems);
@@ -58,7 +59,7 @@ class CartContrl with ChangeNotifier{
   // Método para carregar o carrinho de compras
   Future<void> loadCart() async {
     String? cartItemsJson = await ISecureStorageUtil().getSecureData(cartKey);
-    
+
     if (cartItemsJson != null) {
       List<Cart> loadedCartItems = cartItemsFromJson(cartItemsJson);
       cartItems = loadedCartItems;
@@ -66,7 +67,7 @@ class CartContrl with ChangeNotifier{
     }
   }
 
-    void decrementQuantity(Product product) {
+  void decrementQuantity(Product product) {
     final cartItem = cartItems.firstWhere(
       (item) => item.product.id == product.id,
       orElse: () => Cart(product: product, quantity: 0),
@@ -77,6 +78,7 @@ class CartContrl with ChangeNotifier{
       notifyListeners();
     }
   }
+
   int getQuantity(Product product) {
     final cartItem = cartItems.firstWhere(
       (item) => item.product.id == product.id,
@@ -86,4 +88,3 @@ class CartContrl with ChangeNotifier{
     return cartItem.quantity;
   }
 }
-

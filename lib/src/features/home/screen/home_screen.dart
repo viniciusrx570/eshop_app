@@ -1,6 +1,6 @@
-import 'package:eshop_app/src/core/controller/cart_controller.dart';
+import 'package:eshop_app/src/features/cart/controller/cart_controller.dart';
 import 'package:eshop_app/src/core/controller/controller.dart';
-import 'package:eshop_app/src/core/controller/favorite_controller.dart';
+import 'package:eshop_app/src/features/favorite/controller/favorite_controller.dart';
 import 'package:eshop_app/src/core/models/products_model.dart';
 import 'package:eshop_app/src/core/theme/theme.dart';
 import 'package:eshop_app/src/features/details/screen/details_screen.dart';
